@@ -11,10 +11,10 @@
 
 ## 2. Подключите локальный репозиторий к GitHub
 
-Выполните в терминале (замените YOUR_USERNAME на ваше имя пользователя на GitHub):
+Выполните в терминале:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/agacher-tvoimi-glazami.git
+git remote add origin https://github.com/dimgo66/agacher-tvoimi-glazami.git
 git push -u origin main
 ```
 
@@ -32,7 +32,7 @@ git push -u origin main
 ## 4. Проверьте ваш сайт
 
 Через несколько минут ваш сайт будет доступен по адресу:
-https://YOUR_USERNAME.github.io/agacher-tvoimi-glazami/
+https://dimgo66.github.io/agacher-tvoimi-glazami/
 
 ## Примечание по аутентификации
 

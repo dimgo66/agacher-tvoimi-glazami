@@ -1,0 +1,47 @@
+# Инструкции по публикации сайта на GitHub Pages
+
+## 1. Создайте репозиторий на GitHub
+
+1. Откройте https://github.com/new
+2. Введите имя репозитория: `agacher-tvoimi-glazami`
+3. Добавьте описание: `Сайт о книге Софии Агачер «Твоими глазами»`
+4. Выберите тип репозитория: `Public`
+5. НЕ инициализируйте репозиторий с README, .gitignore или лицензией
+6. Нажмите "Create repository"
+
+## 2. Подключите локальный репозиторий к GitHub
+
+Выполните в терминале (замените YOUR_USERNAME на ваше имя пользователя на GitHub):
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/agacher-tvoimi-glazami.git
+git push -u origin main
+```
+
+Введите ваше имя пользователя и пароль (или токен доступа) при запросе.
+
+## 3. Включите GitHub Pages
+
+1. Перейдите на страницу вашего репозитория на GitHub
+2. Откройте "Settings" (в верхней части страницы)
+3. В левом меню выберите "Pages"
+4. В разделе "Source" выберите "Deploy from a branch"
+5. В разделе "Branch" выберите "main" и "/ (root)"
+6. Нажмите "Save"
+
+## 4. Проверьте ваш сайт
+
+Через несколько минут ваш сайт будет доступен по адресу:
+https://YOUR_USERNAME.github.io/agacher-tvoimi-glazami/
+
+## Примечание по аутентификации
+
+Если при push возникает ошибка аутентификации:
+
+1. Создайте токен доступа (Personal Access Token):
+   - Перейдите в GitHub → Settings → Developer settings → Personal access tokens → Generate new token
+   - Выберите permissions: "repo" (для полного доступа к репозиториям)
+   - Задайте срок действия и создайте токен
+   - Сохраните токен в надежном месте
+
+2. При запросе пароля используйте токен доступа вместо обычного пароля 

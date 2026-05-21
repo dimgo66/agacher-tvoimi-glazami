@@ -23,4 +23,8 @@ logs
 *.suo
 *.ntvs*
 *.njsproj
-*.sln 
+*.sln
+
+# AI tool workspaces and metadata
+.superpowers/
+.gemini/ 

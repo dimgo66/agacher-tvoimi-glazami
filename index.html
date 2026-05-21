@@ -735,5 +735,33 @@
         "alumniOf": "Минский медицинский институт"
     }
     </script>
+
+    <!-- Автоматическая прокрутка к разделу "Сценические адаптации" при загрузке сайта -->
+    <script>
+        // Если в URL нет якоря, мгновенно перенаправляем на #theater для предотвращения задержек
+        if (!window.location.hash) {
+            window.location.replace('#theater');
+        }
+
+        // Быстро прокручиваем при загрузке DOM
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.location.hash === '#theater') {
+                const target = document.getElementById('theater');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'auto', block: 'start' });
+                }
+            }
+        });
+
+        // Дополнительно корректируем прокрутку после полной загрузки всех картинок и ресурсов
+        window.addEventListener('load', () => {
+            if (window.location.hash === '#theater') {
+                const target = document.getElementById('theater');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'auto', block: 'start' });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
